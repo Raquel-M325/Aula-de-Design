@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CÉLULAS MESCLADAS</title>
+    <style>
+        section{
+            display: flex;
+            flex-wrap: wrap;
+            background-color: aqua;
+
+        }
+
+        div{
+            background-color: coral;
+
+        }
+
+        div.mesclada{
+            background-color: pink;
+            flex-basis: 100% /*define a largura flexível, ou seja, preenchendo a janela toda em qualquer zoom, sendo mais utilizada*/;
+            /*definir para alguns elementos, depende do flex wrap*/
+        }
+
+    </style>
+
+</head>
+<body>
+    <section>
+        <div class="mesclada"><p>CÉLULA OCUPANDO 100%</p></div>
+        <div><p>CÉLULA</p></div>
+        <div><p>CÉLULA</p></div>
+        <div><p>CÉLULA</p></div>
+        <div><p>CÉLULA</p></div>
+        <div><p>CÉLULA</p></div>
+        <div><p>CÉLULA</p></div>
+        <div><p>CÉLULA</p></div>
+        <div class="mesclada"><p>CÉLULA OCUPANDO 100%</p></div>
+        <div><p>CÉLULA</p>
+    </section>
+
+
+</body>
+</html>

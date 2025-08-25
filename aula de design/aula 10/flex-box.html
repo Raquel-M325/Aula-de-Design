@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX-BOX</title>
+    <style>
+
+        main{
+
+            display: flex; /*vão colocar os elementos dentro, para ficar como uma fila, um ao lado do outro*/
+            flex-wrap: wrap; /*ele quebra a linha como se fosse "br"*/
+            border: 3px solid palevioletred;
+            margin: 2em auto;
+            max-width: 130em;
+            justify-content: space-around; /*space-between destribui entre os cards o seu canto, flex start coloca todos para esquerda e flex end coloca para direita, around vai colocar um espaçinho dobrado*/
+            row-gap: 2em;
+
+            /* gap: 2em; espaçamento entre elementos */
+            /* column-gap: ; */
+         
+        }
+
+        section{
+
+            border: 1px solid black;
+            width: 38em;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>flex-box</h1>
+
+    <main>
+        <section>
+
+            <h2>Título</h2> 
+            <!-- obrigatoriamente o section tem que ter título -->
+            <!-- inclusive, essas coisas de itálico ou negrito, usa aqui em html ao invés do CSS, para dar informação para aqueles que contém cegueira -->
+            
+            <figure>
+
+                <img src="rosa.png" alt="torre rosa">
+                
+            </figure>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium consequatur odio odit amet dignissimos omnis aliquam tempore nisi non rem numquam, itaque consectetur recusandae, quaerat dolorem. Harum quo error placeat!</p>
+        
+        </section>
+
+        <section>
+
+            <h2>Título</h2>
+
+            <figure>
+
+                <img src="rosa.png" alt="torre rosa">
+                
+            </figure>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium consequatur odio odit amet dignissimos omnis aliquam tempore nisi non rem numquam, itaque consectetur recusandae, quaerat dolorem. Harum quo error placeat!</p>
+       
+        </section>
+       
+        <section>
+            
+            <h2>Título</h2>
+            
+            <figure>
+
+                <img src="rosa.png" alt="torre rosa">
+                
+            </figure>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium consequatur odio odit amet dignissimos omnis aliquam tempore nisi non rem numquam, itaque consectetur recusandae, quaerat dolorem. Harum quo error placeat!</p>
+       
+        </section>
+
+        <section>
+           
+            <h2>Título</h2>
+            
+            <figure>
+
+                <img src="rosa.png" alt="torre rosa">
+                
+            </figure>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium consequatur odio odit amet dignissimos omnis aliquam tempore nisi non rem numquam, itaque consectetur recusandae, quaerat dolorem. Harum quo error placeat!</p>
+       
+        </section>
+
+        <section>
+           
+            <h2>Título</h2>
+            
+            <figure>
+
+                <img src="rosa.png" alt="torre rosa">
+                
+            </figure>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium consequatur odio odit amet dignissimos omnis aliquam tempore nisi non rem numquam, itaque consectetur recusandae, quaerat dolorem. Harum quo error placeat!</p>
+       
+        </section>
+
+        <section>
+           
+            <h2>Título</h2>
+            
+            <figure>
+
+                <img src="rosa.png" alt="torre rosa">
+                
+            </figure>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium consequatur odio odit amet dignissimos omnis aliquam tempore nisi non rem numquam, itaque consectetur recusandae, quaerat dolorem. Harum quo error placeat!</p>
+       
+        </section>
+    </main>
+</body>
+</html>

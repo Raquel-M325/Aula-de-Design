@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aligh-itens</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        body{
+            display: flex;
+            height: 100vh; /*unidade: viewport height - serve mais do que 100%, para isto funcionar, preciso usar a margin*/
+            justify-content: center; /*precisa colocar por aqui no body, por conta do display flex*/
+            align-items: center; /*ele só funciona se tiver o height*/
+            
+
+        }
+
+        section{
+            border: 1px solid black;
+            width: 30rem; /*não pode ser max por causa do display flex*/
+            height: 20rem;
+            display: flex;
+            align-items: flex-end;
+            gap: 2em; /*deu espaço dos blocos, strect significa "esticar"*/
+        }
+        
+        p{
+            background-color: aqua;
+            padding: 1em;
+        }
+
+    </style>
+</head>
+<body>
+
+    <section> 
+        <!-- para visualizar o valor do flex end, preciso colocar mais linhas nos itens, como foi p -->
+        
+        <p>texto a <br>texto texto</p>
+        <p>texto b <br>texto texto</p>
+        <p>texto c <br>texto texto</p>
+        <p>texto d <br>texto texto</p>
+    </section>
+</body>
+</html>

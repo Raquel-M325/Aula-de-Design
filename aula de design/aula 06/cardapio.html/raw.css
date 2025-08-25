@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+li.atual{
+    background-color: blueviolet;
+}
+
+.atual{
+    background-color: aquamarine;
+}
+
+li.atual a{
+    color:darkcyan
+
+}
+
+table{ 
+    border-collapse: collapse;
+    max-width: 70em;
+    margin: 0 auto; /*ajuda para ficar no centro, se eu quiser colocar esquerda ou direita, colocar margin left ou margin right*/
+}
+
+td, th{
+    padding: 1em;
+    border: 1px solid blue;
+}
+
+tr:nth-child(odd){ /*odd: ímpar; já o even: par ou números inteiros...*/
+    background-color: antiquewhite;
+}

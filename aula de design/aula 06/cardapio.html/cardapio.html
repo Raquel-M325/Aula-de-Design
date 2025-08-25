@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante RAW</title>
+    <link rel="stylesheet" href="raw.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Restaurante RAW</a></h1>
+        <nav>
+            <ol>
+                <li class="atual" id=""><a href="cardapio.html">Cardápio</a></li> <!--o "class" serve para classificar, seja individual ou coletivo, 
+                                                                                    já "id" serve para sinalar algo importante, mas pouco é usado-->
+                <li><a href="chefe.html">Chefe</a></li>
+                <li><a href="reserva.html">Reserva</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <main> <!---Não é conteúdo principal-->
+
+        <article> <!---Conteúdo específico da página INTERNA -->
+
+        
+            
+            <h2>Cardápio</h2>
+
+            <!---tabulação de dados != diagramação em colunas, pode colocar (border="1"), mas não é certo em usar por ter CSS-->
+            <table>
+                <!--<caption>Título</caption>-->
+            
+                <!--thead, tbody, tfoot - pesquise -->
+                <tr>
+                    <!--linha -->
+
+                    <th>Prato</th><!--célula de um cabeçalho-->
+                    <th>Preço</th>
+
+                </tr>
+                
+                <tr>
+                    <td>Ragu de beringela</td>
+                    <td>20,00</td>
+
+                </tr>
+                
+                <tr>
+                    <td>Coxinha de Jaca</td>
+                    <td>15,00</td>
+                </tr>
+                
+                <tr>
+                    <td>Nhoque de beterrba</td>
+                    <td>40,00</td>
+                </tr>
+             
+
+
+            </table>
+
+       
+    </article>  
+        <aside> 
+            <!--Conteúdo relacionado à página, as vezes fica embaixo,
+            nem sempre ao lado-->
+     
+        </aside>
+        
+    </main>
+</body>
+</html>

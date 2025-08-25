@@ -1,0 +1,38 @@
+body{
+    background-color: aqua;
+    border: 2em solid blueviolet;
+
+}
+
+li{
+    list-style-image: url(users.png);
+    /* list-style-type: square;
+    background-color:wheat;
+    color: black;
+    list-style-position: inside; */
+
+}
+a{  
+    color: red;
+
+}
+
+a:hover{
+    background-color: cornflowerblue;
+    color:rosybrown;
+    text-decoration: none;
+
+}
+a:link{
+
+
+}
+a:visited{
+    color: cadetblue;
+
+}
+a:active{
+    color: chartreuse;
+    /*Entrou em desuso, não use muito*/
+
+}

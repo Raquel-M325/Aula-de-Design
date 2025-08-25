@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LADES - Laboratório de desenvolvimento de Software</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1><a href="">LADES</a></h1>
+
+        <form action="enviar.html">  
+            <!---É para criar um formulário, infelizmente não dá para acessar agora o back end, como php, python, 
+            coisas de programação, ou seja, não irá achar o lugar nenhum em html por ser estático-->
+            
+            <label for="pesquisa">Pesquisa:</label> 
+                <!---São rótulos, ou seja, coloca as caixinhas, como os potes que tem uma faixa dizendo que é arroz ou  feijão, 
+                além disso serve visualmente para a pessoa pesquisar, conseguindo clicar para pesquisar-->
+
+            <input type="search" id="pesquisa">
+                <!---Tem que ter o mesmo nome no label como foi o caso de pesquisa, serve para envio de dados, o id serve para identificador de tag, do qual
+                ajuda no back end para identificar no banco de dados-->
+
+            <input type="submit" value="buscar">
+                    
+        </form>
+
+    </header>
+    
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates, itaque culpa? Cum magni, maiores in similique culpa inventore. Tempore a, ratione quis pariatur hic ducimus voluptates repellendus vel possimus nam!</p>
+        
+        <form action="enviar.html">
+
+            <label for="nome">Nome:</label> 
+            <input type="text" id="nome" placeholder="Digite o nome"><br>
+                <!-- serve o placeholder para dar mais acessibilidade no parte do espaço que for preencher, 
+                inclsuive tanto faz usar o id ou name, ambos servem, mas a preferência é id -->
+            
+                <label for="email">Email:</label>
+            <input type="email" id="email" required ><br>
+                <!-- value serve para que os dados que já foram preechidos, se lembra e coloca novamente, ao invés de por exemplo repetir de colocar o email, 
+                ele preenche automaticamente, já o required avisa se não preencheu o formulário -->
+            
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha"><br>
+            <input type="submit" name="" id="Enviar">
+            <!-- existe a tag bottom que serve o mesmo e é mais avançado -->
+            
+        </form>
+       
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates, itaque culpa? Cum magni, maiores in similique culpa inventore. Tempore a, ratione quis pariatur hic ducimus voluptates repellendus vel possimus nam!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates, itaque culpa? Cum magni, maiores in similique culpa inventore. Tempore a, ratione quis pariatur hic ducimus voluptates repellendus vel possimus nam!</p>
+    </main>
+    
+    <footer>
+        <p>Desenvolvido por IFRN</p>
+    
+    </footer>
+
+</body>
+</html>

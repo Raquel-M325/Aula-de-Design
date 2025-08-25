@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSITION-FIXED</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        div#container{ /*o # serve com id*/
+            margin: 1em auto;
+            max-width: 50rem;
+            background-color: #ddd;
+            padding: 1rem;
+            position: relative; /*não precisa para o fixo, mas pode ser usado depois, e se for usar, precisa usar o eixo-z com z-index*/
+            z-index: 1; /*são camadas, por exemplo, para ficar por trás do menu, camada 1, para fora 2 e assim segue*/  
+
+
+        }
+
+        header, main, footer{
+            border: 1px solid #999;
+            padding: 1rem;
+        }
+
+        div.cookies{ /*o . só funciona com class*/
+            background-color: aqua;
+            padding: 2rem;
+            box-shadow: 0 0 0.1rem 0.1rem gray;
+            border-radius: 0.1rem;
+            position: fixed; /*quando coloca position fixed ou absolute, o display do elemento fica inline-block*/
+            width: 100vw; /*é necessário colocar porque o display fica inline-block, ou seja, deixa tudo preenchido o espaço para não ficar sobrando também*/
+            top: 0;
+            left: 0;
+            z-index: 2; /*serve para ficar para fora*/
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="cookies">
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ipsam inventore eligendi excepturi, tempore vitae sunt est quam ipsa et, velit, magnam odio repellat cupiditate dolores repellendus tempora quis saepe.</p>
+    
+    </div>
+    
+    <div id="container"> 
+
+        <div class="modal">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem optio quidem dignissimos voluptates commodi ut, veniam asperiores voluptas iure distinctio minima eligendi accusamus, quos nulla incidunt ad quibusdam nisi totam.</p>
+
+        </div>
+
+        <header>
+
+            <h1>DIA DO AMIGO</h1>
+
+        </header>
+
+        <main>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis fugiat ipsam repellendus, iure vel a quam consequatur voluptatum ipsa voluptate velit mollitia tenetur quibusdam ratione magni quos asperiores expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis fugiat ipsam repellendus, iure vel a quam consequatur voluptatum ipsa voluptate velit mollitia tenetur quibusdam ratione magni quos asperiores expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis fugiat ipsam repellendus, iure vel a quam consequatur voluptatum ipsa voluptate velit mollitia tenetur quibusdam ratione magni quos asperiores expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis fugiat ipsam repellendus, iure vel a quam consequatur voluptatum ipsa voluptate velit mollitia tenetur quibusdam ratione magni quos asperiores expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis fugiat ipsam repellendus, iure vel a quam consequatur voluptatum ipsa voluptate velit mollitia tenetur quibusdam ratione magni quos asperiores expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis fugiat ipsam repellendus, iure vel a quam consequatur voluptatum ipsa voluptate velit mollitia tenetur quibusdam ratione magni quos asperiores expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis fugiat ipsam repellendus, iure vel a quam consequatur voluptatum ipsa voluptate velit mollitia tenetur quibusdam ratione magni quos asperiores expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis fugiat ipsam repellendus, iure vel a quam consequatur voluptatum ipsa voluptate velit mollitia tenetur quibusdam ratione magni quos asperiores expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis fugiat ipsam repellendus, iure vel a quam consequatur voluptatum ipsa voluptate velit mollitia tenetur quibusdam ratione magni quos asperiores expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis fugiat ipsam repellendus, iure vel a quam consequatur voluptatum ipsa voluptate velit mollitia tenetur quibusdam ratione magni quos asperiores expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis fugiat ipsam repellendus, iure vel a quam consequatur voluptatum ipsa voluptate velit mollitia tenetur quibusdam ratione magni quos asperiores expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis fugiat ipsam repellendus, iure vel a quam consequatur voluptatum ipsa voluptate velit mollitia tenetur quibusdam ratione magni quos asperiores expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis fugiat ipsam repellendus, iure vel a quam consequatur voluptatum ipsa voluptate velit mollitia tenetur quibusdam ratione magni quos asperiores expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis fugiat ipsam repellendus, iure vel a quam consequatur voluptatum ipsa voluptate velit mollitia tenetur quibusdam ratione magni quos asperiores expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis fugiat ipsam repellendus, iure vel a quam consequatur voluptatum ipsa voluptate velit mollitia tenetur quibusdam ratione magni quos asperiores expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis fugiat ipsam repellendus, iure vel a quam consequatur voluptatum ipsa voluptate velit mollitia tenetur quibusdam ratione magni quos asperiores expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis fugiat ipsam repellendus, iure vel a quam consequatur voluptatum ipsa voluptate velit mollitia tenetur quibusdam ratione magni quos asperiores expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis fugiat ipsam repellendus, iure vel a quam consequatur voluptatum ipsa voluptate velit mollitia tenetur quibusdam ratione magni quos asperiores expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis fugiat ipsam repellendus, iure vel a quam consequatur voluptatum ipsa voluptate velit mollitia tenetur quibusdam ratione magni quos asperiores expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis fugiat ipsam repellendus, iure vel a quam consequatur voluptatum ipsa voluptate velit mollitia tenetur quibusdam ratione magni quos asperiores expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis fugiat ipsam repellendus, iure vel a quam consequatur voluptatum ipsa voluptate velit mollitia tenetur quibusdam ratione magni quos asperiores expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis fugiat ipsam repellendus, iure vel a quam consequatur voluptatum ipsa voluptate velit mollitia tenetur quibusdam ratione magni quos asperiores expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis fugiat ipsam repellendus, iure vel a quam consequatur voluptatum ipsa voluptate velit mollitia tenetur quibusdam ratione magni quos asperiores expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis fugiat ipsam repellendus, iure vel a quam consequatur voluptatum ipsa voluptate velit mollitia tenetur quibusdam ratione magni quos asperiores expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis fugiat ipsam repellendus, iure vel a quam consequatur voluptatum ipsa voluptate velit mollitia tenetur quibusdam ratione magni quos asperiores expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis fugiat ipsam repellendus, iure vel a quam consequatur voluptatum ipsa voluptate velit mollitia tenetur quibusdam ratione magni quos asperiores expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis fugiat ipsam repellendus, iure vel a quam consequatur voluptatum ipsa voluptate velit mollitia tenetur quibusdam ratione magni quos asperiores expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis fugiat ipsam repellendus, iure vel a quam consequatur voluptatum ipsa voluptate velit mollitia tenetur quibusdam ratione magni quos asperiores expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis fugiat ipsam repellendus, iure vel a quam consequatur voluptatum ipsa voluptate velit mollitia tenetur quibusdam ratione magni quos asperiores expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis fugiat ipsam repellendus, iure vel a quam consequatur voluptatum ipsa voluptate velit mollitia tenetur quibusdam ratione magni quos asperiores expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis fugiat ipsam repellendus, iure vel a quam consequatur voluptatum ipsa voluptate velit mollitia tenetur quibusdam ratione magni quos asperiores expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis fugiat ipsam repellendus, iure vel a quam consequatur voluptatum ipsa voluptate velit mollitia tenetur quibusdam ratione magni quos asperiores expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis fugiat ipsam repellendus, iure vel a quam consequatur voluptatum ipsa voluptate velit mollitia tenetur quibusdam ratione magni quos asperiores expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis fugiat ipsam repellendus, iure vel a quam consequatur voluptatum ipsa voluptate velit mollitia tenetur quibusdam ratione magni quos asperiores expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis fugiat ipsam repellendus, iure vel a quam consequatur voluptatum ipsa voluptate velit mollitia tenetur quibusdam ratione magni quos asperiores expedita.</p>
+        </main>
+
+        <footer>
+            <p>DESENVOLVIMENTO POR IFRN</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

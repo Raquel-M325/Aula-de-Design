@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify-context</title>
+    <style>
+        section{
+            display: flex;
+            margin: 0 auto;
+            background-color: aquamarine; /*só pra ajudar aonde deslocar a marcação, mas não se importe muito*/
+            max-width: 70rem; /*esse ajuda ficar no centro com o bloco, mas com a margin*/
+            justify-content: center; /*para colocar os cards no centro do bloco*/
+        }
+
+        div{
+            border: 1px solid gray;
+            background-color: palevioletred;
+            width: 10rem; /*serve pra dar um espaço dentro do bloco*/
+            text-align: center; /*serve para deslocar somente o texto, como foi esse caso para o centro*/
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div><p>TEXTO A</p></div>
+        <div><p>TEXTO B</p></div>
+        <div><p>TEXTO C</p></div>
+        <div><p>TEXTO D</p></div>
+        <div><p>TEXTO E</p></div>
+        <div><p>TEXTO F tecnologia</p></div>
+    </section>
+</body>
+</html>

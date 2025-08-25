@@ -1,0 +1,43 @@
+*{ 
+    /*serve para pegar todas as tags, para normalizar 
+    todo o espaçamento, colocando tudo de forma singular 
+    e tirando todas as marcações, já que ele tira tudo de uma ve*/
+   
+    /*padding serve para colocar o espaçamento de dentro, já margin
+    serve para colocar a margem da borda*/
+    
+    margin: 0; /*ESPAÇAMENTO EXTERNO ELEMENTO*/
+    padding: 0; /*ESPAÇAMENTO INTERNO ELEMENTO*/
+}
+
+h1{
+    margin: 5em;
+    border: 1px solid black;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+section{
+    padding: 2em;
+}
+
+nav li{ /*Especividade formata dentro do li para nev*/
+    display: inline-block; /*Permitir que os li fiquem umao lado do outro*/
+    list-style-type: none;
+}
+
+nav li a{ /*tanto faz colocar esse li*/
+    display: inline-block;
+    border: 1px solid #addd;
+    padding: 1em 2em;
+    text-decoration: none;
+    color: black;
+}
+
+nav li a:hover{
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIA DO AMIGO</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        div#container{
+            margin: 1em auto;
+            max-width: 50rem;
+            background-color: #ddd;
+            padding: 1rem;
+            position: relative; /*faz com que a tela fique presa naquela posição fixa, inclusive quando usa aquele menu e abre o outro, esse relative com absolute servem para isso*/
+
+        }
+
+        header, main, footer{
+            border: 1px solid #999;
+            padding: 1rem;
+        }
+
+        div.modal{
+            background-color: aqua;
+            padding: 2rem;
+            box-shadow: 0 0 0.1rem 0.1rem gray;
+            border-radius: 0.1rem;
+            width: 20rem;
+            height: 20rem;
+            position: absolute; /*vai permitir que esse elemento fica em frente do outro, ela se liga ao body, mas se tiver position relative, a absolute vai ligar com relative das coordenadas*/
+            top: 0;
+            left: 20rem;
+            /* right: ; */
+            /* left: ; tem que escolher qual dos dois irá utilizar para mudar a posição da tela, não pode pro exemplo top e bottom ao mesmo tempo */
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+
+        <header>
+
+            <!-- modal serve para deixar escuro ao redor para focar naquela informação -->
+            <div class="modal">
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ipsam inventore eligendi excepturi, tempore vitae sunt est quam ipsa et, velit, magnam odio repellat cupiditate dolores repellendus tempora quis saepe.</p>
+            
+            </div>
+
+            <h1>DIA DO AMIGO</h1>
+
+        </header>
+
+        <main>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis fugiat ipsam repellendus, iure vel a quam consequatur voluptatum ipsa voluptate velit mollitia tenetur quibusdam ratione magni quos asperiores expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis fugiat ipsam repellendus, iure vel a quam consequatur voluptatum ipsa voluptate velit mollitia tenetur quibusdam ratione magni quos asperiores expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis fugiat ipsam repellendus, iure vel a quam consequatur voluptatum ipsa voluptate velit mollitia tenetur quibusdam ratione magni quos asperiores expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis fugiat ipsam repellendus, iure vel a quam consequatur voluptatum ipsa voluptate velit mollitia tenetur quibusdam ratione magni quos asperiores expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis fugiat ipsam repellendus, iure vel a quam consequatur voluptatum ipsa voluptate velit mollitia tenetur quibusdam ratione magni quos asperiores expedita.</p>
+        </main>
+
+        <footer>
+            <p>DESENVOLVIMENTO POR IFRN</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

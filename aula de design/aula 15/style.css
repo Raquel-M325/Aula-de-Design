@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+div#conteiner{
+    max-width: 80rem;
+    margin: 1rem auto;
+    background-color: #dedede;
+}
+
+main{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center; /*caso layout fluido, ela é um layout sem largura*/
+}
+
+main section{
+    border: 1px solid black;
+    padding: 1rem;
+    margin: 1rem;
+    flex-basis: 18%;
+}
+
+img{
+    width: 100%;
+}
+
+header{
+    padding: 4rem;
+    background-image: url(imagens/sZjHr0bI.png);
+    background-size: cover; /*esses dois do background equivale a largura de 100% na imagem*/
+    background-position: top right;
+    background-attachment: fixed; /*serve pra que a imagem tenha a rolagem tendo um efeito*/
+    margin-bottom: 2rem;
+    /* background-repeat: no-repeat;  */
+}
+
+@media screen and (max-width:1024px){ /*primeiro tem que ser em telas grandes, além disso esse é para a versão do tablet*/
+    main{
+        background-color: deeppink;
+    }
+    main section{
+        flex-basis: 40%;
+    }
+    
+}
+
+@media screen and (max-width: 680px){ /*é como se fosse um if, sendo uma versão para celular, tem que ser em px*/
+    main{
+        background-color: aqua;
+        
+    }
+
+    main section{
+        flex-basis: 90%;
+    }
+/* 
+    header{
+        visibility: hidden; ele esconde/não mostra o elemento, mas ocupa o espaço do elemento
+        display: none; não ocupa o espaço
+    }*/
+
+} 

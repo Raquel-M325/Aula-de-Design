@@ -1,0 +1,22 @@
+ul{
+    text-align: center;
+}
+
+li{
+    display: inline; 
+    /* permitirá que um fique ao lado do outro*/
+   
+    list-style-type: none;
+    /*remove os marcadores*/
+
+}
+a{
+    display: inline-block;
+    padding: 1em;
+    /*dá espaçamento entre eles*/
+}
+
+a:hover{
+    background-color: cornflowerblue;
+    display: inline-block;
+}

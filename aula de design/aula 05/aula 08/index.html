@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SÃO PEDRO - IFRN CNAT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+
+        <h1>SÃO PEDRO DO IFRN CAMPUS NATAL CENTRAL</h1>
+
+    </header>
+
+    <main>
+        
+
+        <form action="enviar.html">
+
+            <H2>INSCRIÇÃO PARA O EVENTO</H2>
+
+            <label for="nome">Nome: </label>
+            <input type="text" id="nome"> <br> 
+            
+            <label for="email">Email: </label>
+            <input type="email" id="email"> <br>
+            
+            <label for="cidade" id="Cidade: ">Cidade: </label> 
+            <input type="text" id="cidade" list="cidades">
+
+            <datalist id="cidades">
+            <!-- esse não faz com que a pessoa obrigatoriamente precisa selecionar as opções para continuar o site, não dando erro -->
+
+                <option value="Natal"></option>
+                <option value="Parnamirim"></option>
+
+            </datalist> <br> 
+
+            <label for="curso">Curso: </label>
+
+            <select name="curso" id="curso">
+            <!-- já esse te obriga a selecionar uma das opções sem escrever um novo, o ideal é que tivesse todos os cursos, ao invés de alguns, o combobox -->
+            <!-- ATRIBUTO size permite aberto, raramente usa, serve para selecionar para mostrar só aquelas opções, coloca quantos quer que apareçam -->
+            <!-- comando Multiple permite selecionar vários com control na parte de escolher -->
+                
+                <option value="vazio">Vazio</option>
+                <option value="tads" selected>TADS</option> 
+                <!-- O selected serve para exibir logo aquela opção, porque sabe que aquela é o que o pessoal mais procura -->
+
+                <option value="gestao">Gestão Pública</option>
+                <option value="redes">Redes de Computadores</option>
+                
+            </select> <br>
+            
+            <input type="submit" value="Enviar">
+
+        </form>
+
+        <form action="enviar.html">
+
+            <h2>ENQUETE</h2>
+
+            <!-- nesse caso não precisa colocar o 'for' no label, é bom usar o label para facilitar de clicar em cima da letra ao invés de ir até a bolinha para clicar -->
+            <!-- dessa forma 'value' faz com que nao tenha varias categorias para selecionar em uma resposta, e sim varias respostas de cada categoria, além disso ele é a resposta no front-->
+            <!-- no name se repete o nome para se tornar em uma só, se  quiser diferenciar, é só mudar para outro no name e acrescente o value que queira colocar de difernte resposta -->
+
+            <p>Sobre as músicas:</p>
+            
+            <label><input type="radio" name="musicas" value="Toca de tudo"> Tocar de tudo </label><br>
+            <label><input type="radio" name="musicas" value="soforro"> Só forró</label><br>
+            <label><input type="radio" name="musicas" value="dj"> DJ </label><br>
+            
+            <p>Sobre as comidas:</p>
+            
+            <label><input type="radio" name="comidas" value="tudo"> Tudo </label><br>
+            <label><input type="radio" name="comidas" value="tipicas"> Só tipicas </label><br>
+            <label><input type="radio" name="comidas" value="sem"> Sem comida </label><br>
+            
+            
+            <input type="submit" value="Votar">
+
+        </form>
+
+        <form action="enviar.html">
+            
+            <h2>Contato</h2>
+
+            <label for="mensagem">Mensagem: </label>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10" maxlength="10"></textarea>
+            <!-- textarea serve mais para mensagem, já que geralmente contém o texto é mais longa, por isso no espaço não escreva, porque é para o usuário escrever e ele captar a escrita como a bio por exemplo -->
+            <!-- maxlength serve para definir o limite de caracteres na mensagem para o usuário não escrever demais -->
+
+            <input type="submit" value="Enviar">
+
+        </form>
+
+        <!-- <a href="http://google.com.br" target="_blank">google</a> -->
+        <!-- esse 'a' não muito usada dessa forma -->
+
+        <form action="enviar.html">
+
+            <h2>Comidas preferidas</h2>
+
+            <label><input type="checkbox" name="comida" value="pamonha" checked > Pamonha</label> <br>
+            <label><input type="checkbox" name="comida" value="canjica" disabled > Canjica</label> <br>
+            <!-- o checked serve para deixar marcado como checado, mostrando que já vai ser escolhido automático por já ter costume de todo usuário ter escolhidp -->
+            <!-- já o disabled serve para anular a marcação, demonstrando que não tem mais -->
+
+            <label><input type="checkbox" name="comida" value="mungunza"  > Mungunza</label> <br>
+            <label><input type="checkbox" name="comida" value="arrozdoce"  > Arroz doce</label> <br>
+            <label><input type="checkbox" name="comida" value="milho"  > Milho</label> <br>
+
+        </form>
+
+    </main>
+
+    <footer>
+
+        <P>Desenvolvido pelo CNAT</P>
+
+    </footer>
+
+</body>
+</html>

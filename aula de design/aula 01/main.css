@@ -1,0 +1,12 @@
+/* contém um comando diferente do html, do qual tem que usar de duas formas */
+body{
+    background-color:cadetblue; /* Define o tipo de cor de fundo do site */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2em;
+}
+h1{
+    text-align: center;
+}
+li{
+    list-style-type: square;
+}

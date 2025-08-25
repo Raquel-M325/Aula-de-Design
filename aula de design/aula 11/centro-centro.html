@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CENTRO-CENTRO</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        body{
+            display: flex;
+            height: 100vh; /*unidade: viewport height - serve mais do que 100%, para isto funcionar, preciso usar a margin*/
+            justify-content: center; /*precisa colocar por aqui no body, por conta do display flex*/
+            align-items: center; /*ele só funciona se tiver o height*/
+            
+
+        }
+
+        section{
+            border: 1px solid black;
+            width: 30rem; /*não pode ser max por causa do display flex*/
+            height: 20rem;
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <section>
+        <p>texto a</p>
+        <p>texto b</p>
+        <p>texto c</p>
+        <p>texto d</p>
+    </section>
+</body>
+</html>

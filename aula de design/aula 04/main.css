@@ -1,0 +1,15 @@
+/*De destaque use a imagem para html principal, já o descartável como o plano de fundo é para CSS*/
+
+body{
+    background-image: url(diatinf.bg.png),url(bg.png), url(bg.png);
+    /*posso colocar várias imagens por virgula, para decorar e deixar mais dinâmico, ou seja, posso usar a criatividade para deixar mais bonito */
+    
+    background-repeat: no-repeat, repeat-x;
+    background-position: right bottom, center;
+    background-size: cover;
+    /*o size do cover serve para se adaptar a largura do site da resolução do dispositivo*/
+}
+h1{
+    background-image: linear-gradient(blue, purple);
+    color: white;
+}
